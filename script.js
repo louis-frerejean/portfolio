@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // 1. EFFET DE LUEUR SUR LES CARTES
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.bento-card, .project-tile');
     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
@@ -34,5 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const revealElements = document.querySelectorAll('.reveal');
     revealElements.forEach(el => observer.observe(el));
 
-    console.log("Portfolio Louis Frerejean - Optimized & Aligned.");
 });
