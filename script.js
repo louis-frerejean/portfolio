@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // 1. EFFET DE LUEUR SUR LES CARTES
     const cards = document.querySelectorAll('.bento-card, .project-tile');
     cards.forEach(card => {
@@ -16,12 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. ANIMATION AU SCROLL
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
+    // 2. ANIMATION AU SCROLL (reveal)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -29,9 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
-    const revealElements = document.querySelectorAll('.reveal');
-    revealElements.forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // 3. NAVBAR ACTIVE AU SCROLL
+    const sections = document.querySelectorAll('section[id], footer[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+                if (active) active.classList.add('active');
+            }
+        });
+    }, { threshold: 0.3 });
+
+    sections.forEach(section => navObserver.observe(section));
 
 });
