@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louis Frerejean | Tech & Business</title>
+    <title>Louis Frerejean | Cybersécurité & Tech</title>
+    <meta name="description" content="Portfolio de Louis Frerejean — Futur alternant en Cybersécurité (Guardia Cybersecurity School), background en IoT, IA générative et gestion de projet. Basé à Lyon.">
+    <meta property="og:title" content="Louis Frerejean | Cybersécurité & Tech">
+    <meta property="og:description" content="Futur alternant en Cybersécurité — un parcours atypique entre usine de précision, intelligence artificielle et entrepreneuriat.">
+    <meta property="og:image" content="https://theloulou8149.github.io/portfolio/photo.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://theloulou8149.github.io/portfolio/">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +21,7 @@
     <nav class="navbar fade-in">
         <span class="logo">LF.</span>
         <div class="nav-links">
-            <a href="#hero">Start</a>
+            <a href="#hero">Accueil</a>
             <a href="#timeline">Parcours</a>
             <a href="#projets">Projets</a>
             <a href="#contact">Contact</a>
@@ -166,6 +173,67 @@
             </div>
         </section>
 
+        <section id="competences" class="section-container">
+            <h2 class="section-title"><i class="ph ph-wrench"></i> Compétences <span class="dim">| Langages, Outils & Certifications</span></h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <i class="ph ph-code"></i>
+                        <h3>Langages</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span>Python</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>Arduino (C++)</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <i class="ph ph-toolbox"></i>
+                        <h3>Outils & Logiciels</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span>VS Code</span>
+                        <span>Suite Adobe</span>
+                        <span>Canva</span>
+                        <span>WordPress</span>
+                        <span>Pack Office</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <i class="ph ph-certificate"></i>
+                        <h3>Certification</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="pill-highlight">Lean Green Belt</span>
+                    </div>
+                    <p class="skill-desc">Obtenue lors du stage chez Diwii — Mines St-Étienne. Optimisation de processus et conduite du changement.</p>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <i class="ph ph-binoculars"></i>
+                        <h3>Culture Tech</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span>Veille IA générative</span>
+                        <span>Industrie 4.0</span>
+                        <span>Communautés Arduino</span>
+                        <span>Discord Tech</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <section id="projets" class="section-container">
             <h2 class="section-title"><i class="ph ph-rocket-launch"></i> Réalisations <span class="dim">| Business, Tech & Social</span></h2>
             
@@ -176,7 +244,11 @@
                         <div class="tile-icon purple"><i class="ph ph-trend-up"></i></div>
                     </div>
                     <h3>Keeshirt : Business Game</h3>
-                    <p>Simulation stratégique de gestion d'entreprise textile. Achat/Revente, Stock et décisions financières en temps réel (compétition).</p>
+                    <p>Simulation stratégique de gestion d'entreprise textile. Achat/Revente, stock et décisions financières en temps réel (compétition inter-équipes).</p>
+                    <div class="tile-results">
+                        <span class="result-badge green">Résultat : Bien</span>
+                        <span class="result-badge blue">Engagement : Top</span>
+                    </div>
                     <div class="tile-tags">
                         <span>Stratégie</span><span>Finance</span><span>Gestion</span>
                     </div>
@@ -187,7 +259,12 @@
                         <div class="tile-icon blue"><i class="ph ph-lightbulb"></i></div>
                     </div>
                     <h3>Projet "Pop Up"</h3>
-                    <p>Challenge Innovation : Création d'un produit et d'une marque de A à Z à partir de contraintes aléatoires. Idéation & Business Model.</p>
+                    <p>Challenge Innovation : création d'un produit et d'une marque de A à Z à partir de contraintes aléatoires — idéation, business model et pitch devant jury.</p>
+                    <div class="tile-results">
+                        <span class="result-badge blue">Résultat : Excellent</span>
+                        <span class="result-badge green">Engagement : Normal</span>
+                    </div>
+                    <div class="tile-quote">"Vous rendez un très bon dossier et votre présentation est professionnelle. Bravo !"</div>
                     <div class="tile-tags">
                         <span>Innovation</span><span>Design</span><span>Branding</span>
                     </div>
@@ -198,9 +275,15 @@
                         <div class="tile-icon green"><i class="ph ph-code"></i></div>
                     </div>
                     <h3>Développement Web</h3>
-                    <p>Conception et codage d'un site web complet from scratch. Maîtrise de la structure, du style et de l'interactivité.</p>
+                    <p>Conception de ce portfolio de A à Z (HTML, CSS, JS) et formation complète en développement web — HTML, JavaScript, PHP et projets Full Stack.</p>
+                    <div class="tile-results">
+                        <span class="result-badge blue">HTML : Excellent / Top</span>
+                        <span class="result-badge blue">Full Stack : Excellent</span>
+                        <span class="result-badge green">JS & PHP : Bien</span>
+                    </div>
+                    <div class="tile-quote">"Engagement remarquable et excellents résultats en HTML et Full Stack."</div>
                     <div class="tile-tags">
-                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
                     </div>
                 </div>
 
@@ -231,7 +314,7 @@
                         <div class="tile-icon purple"><i class="ph ph-users"></i></div>
                     </div>
                     <h3>Gestion de Projet RSE</h3>
-                    <p>Conception et pilotage d'un week-end inclusif au Mans pour personnes à mobilité réduite (PMR) — logistique, budget, partenariats et coordination d'équipe.</p>
+                    <p>Conception académique complète d'un week-end inclusif au Mans pour personnes à mobilité réduite — logistique, budget, partenariats et coordination d'équipe.</p>
                     <div class="tile-tags">
                         <span>Gestion Projet</span><span>RSE</span><span>Event</span>
                     </div>

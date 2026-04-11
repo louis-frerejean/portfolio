@@ -27,24 +27,21 @@
 
 ---
 
-## PRIORITÉ 2 — Améliorations importantes
-
-Ces points impactent l'expérience utilisateur et la visibilité en ligne.
+## PRIORITÉ 2 — Améliorations importantes ✅ TERMINÉ
 
 ### Contenu (Fond)
-
-- [ ] **Corriger "Start" → "Accueil"** dans la navbar. Le site est 100% en français.
-- [ ] **Enrichir les projets avec des résultats concrets** : ajouter une ligne de résultat ou chiffre pour chaque tile (ex : classement Keeshirt, retours sur le week-end au Mans, etc.).
-- [ ] **Préciser le projet "Développement Web"** : mentionner explicitement que c'est ce portfolio.
-- [ ] **Ajouter une section "Compétences"** : bloc synthétique des langages (Python, Arduino, HTML/CSS/JS), outils (VS Code, Suite Adobe, Canva, WordPress) et certifications (Lean Green Belt). Aujourd'hui cette info est noyée dans les cards.
-- [ ] **Mettre en avant la certification Lean Green Belt** plus visiblement — se noie dans les tags du stage Diwii.
-- [ ] **Mettre à jour le titre de l'onglet** : "Louis Frerejean | Tech & Business" → "Louis Frerejean | Cybersécurité & Tech".
+- [x] Corriger "Start" → "Accueil" dans la navbar
+- [x] Enrichir les projets avec résultats (badges Résultat/Engagement + mentions jury)
+- [x] Corriger "Gestion Projet RSE" → reformulé "conception académique" (pas un vrai événement)
+- [x] Préciser le projet "Développement Web" : ce portfolio + résultats cours web
+- [x] Ajouter section Compétences (Langages, Outils, Lean Green Belt, Culture Tech)
+- [x] Lean Green Belt mis en avant dans la section Compétences (badge vert)
+- [x] Mettre à jour le titre de l'onglet → "Louis Frerejean | Cybersécurité & Tech"
 
 ### SEO & Partage (Forme)
-
-- [ ] **Ajouter une `<meta name="description">`** : "Portfolio de Louis Frerejean — Futur alternant en Cybersécurité (Guardia), background IoT, IA générative et gestion de projet."
-- [ ] **Ajouter les balises Open Graph** (og:title, og:description, og:image) pour les aperçus LinkedIn, WhatsApp, etc.
-- [ ] **Ajouter un favicon** (icône "LF" dans l'onglet navigateur).
+- [x] Ajouter `<meta name="description">`
+- [x] Ajouter balises Open Graph (titre, description, image, URL)
+- [x] Ajouter favicon SVG "LF"
 
 ---
 

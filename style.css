@@ -222,6 +222,75 @@ body::before {
 .tile-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
 .tile-tags span { font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.03); padding: 4px 10px; border-radius: 6px; }
 
+/* --- SECTION COMPÉTENCES --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: var(--glass-bg); border: 1px solid var(--glass-border);
+    border-radius: 14px; padding: 1.5rem;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.skill-card:hover { transform: translateY(-3px); border-color: rgba(255,255,255,0.2); }
+
+.skill-card-header {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 1.2rem;
+}
+.skill-card-header i { font-size: 1.3rem; color: var(--accent-blue); }
+.skill-card-header h3 { margin: 0; font-size: 1rem; color: white; font-weight: 600; }
+
+.skill-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-pills span {
+    font-size: 0.8rem; padding: 5px 12px; border-radius: 50px;
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-secondary); transition: 0.2s;
+}
+.skill-pills span:hover { background: rgba(59,130,246,0.15); border-color: var(--accent-blue); color: white; }
+
+.pill-highlight {
+    background: rgba(16, 185, 129, 0.15) !important;
+    border-color: rgba(16, 185, 129, 0.4) !important;
+    color: #34d399 !important;
+    font-weight: 700 !important;
+}
+
+.skill-desc {
+    margin: 1rem 0 0; font-size: 0.82rem;
+    color: var(--text-secondary); line-height: 1.5;
+}
+
+/* --- BADGES RÉSULTATS PROJETS --- */
+.tile-results {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-bottom: 0.8rem;
+}
+
+.result-badge {
+    font-size: 0.72rem; font-weight: 700; padding: 3px 10px;
+    border-radius: 50px; display: inline-block;
+}
+.result-badge.green {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.result-badge.blue {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.tile-quote {
+    font-size: 0.8rem; color: var(--text-secondary);
+    border-left: 2px solid var(--accent-purple);
+    padding-left: 10px; margin-bottom: 1rem;
+    font-style: italic; line-height: 1.5;
+}
+
 /* --- FOOTER MODERN --- */
 .footer-modern {
     margin-top: 6rem;
