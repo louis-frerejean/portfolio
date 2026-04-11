@@ -77,22 +77,18 @@ Ces points n'impactent pas l'utilisateur final mais améliorent la qualité du c
 
 ---
 
-## PRIORITÉ 5 — Évolutions futures
-
-À considérer une fois les priorités 1–3 traitées.
+## PRIORITÉ 5 — Évolutions futures ✅ TERMINÉ (sauf exceptions)
 
 ### Contenu (Fond)
-
-- [ ] **Ajouter des témoignages** : tuteur Diwii, référent LDLC, partenaire du projet Mans — très fort pour un profil qui cherche une alternance.
-- [ ] **Ajouter une section "Ce que je cherche"** : type de mission cyber (pentest, SOC, GRC ?), secteur, rythme d'alternance souhaité. Aide le recruteur à se projeter.
-- [ ] **Internationaliser** : version anglaise si des opportunités hors France sont envisagées.
+- [x] Témoignage Bertrand NEMORIN (Diwii / Mines St-Étienne) — synthèse + points forts
+- [x] Section "Ce que je cherche" — équipe cyber, SOC, alternance 1 an, Lyon priorité
+- [ ] **Version anglaise** — reportée à plus tard, pas prioritaire pour l'alternance FR
 
 ### Technique (Forme)
-
-- [ ] **Ajouter des données structurées JSON-LD** (schema.org/Person) pour le référencement sémantique.
-- [ ] **Optimiser `photo.jpeg`** : convertir en WebP, vérifier le poids (< 200 Ko idéalement).
-- [ ] **Mettre en place un domaine personnalisé** (`louisfrerejean.com` ou similaire).
-- [ ] **Passer à un générateur de site statique** (Astro, Eleventy) si le site grossit.
+- [x] JSON-LD schema.org/Person ajouté dans le `<head>`
+- [ ] **Optimiser `photo.jpeg`** — actuellement 1016 Ko, objectif < 200 Ko. Utiliser [squoosh.app](https://squoosh.app) pour compresser sans perte visible, puis renommer en `photo.webp` et mettre à jour la balise `<img>` et les OG.
+- [ ] **Domaine personnalisé** — GitHub Pages gratuit conservé pour l'instant
+- [ ] **Passer à un générateur de site statique** (Astro, Eleventy) — si le site grossit encore
 
 ---
 
