@@ -90,7 +90,7 @@ Ces points n'impactent pas l'utilisateur final mais améliorent la qualité du c
 ### Technique (Forme)
 
 - [ ] **Ajouter des données structurées JSON-LD** (schema.org/Person) pour le référencement sémantique.
-- [ ] **Optimiser `photo.jpg`** : convertir en WebP, vérifier le poids (< 200 Ko idéalement).
+- [ ] **Optimiser `photo.jpeg`** : convertir en WebP, vérifier le poids (< 200 Ko idéalement).
 - [ ] **Mettre en place un domaine personnalisé** (`louisfrerejean.com` ou similaire).
 - [ ] **Passer à un générateur de site statique** (Astro, Eleventy) si le site grossit.
 
