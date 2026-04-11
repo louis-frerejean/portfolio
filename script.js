@@ -28,7 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // 3. NAVBAR ACTIVE AU SCROLL
+    // 3. ACCESSIBILITÉ — icônes décoratives masquées aux lecteurs d'écran
+    document.querySelectorAll('i[class*="ph-"]').forEach(icon => {
+        if (!icon.hasAttribute('aria-label')) {
+            icon.setAttribute('aria-hidden', 'true');
+        }
+    });
+
+    // 4. NAVBAR ACTIVE AU SCROLL
     const sections = document.querySelectorAll('section[id], footer[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
 
