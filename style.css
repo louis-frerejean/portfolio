@@ -118,10 +118,10 @@ body::before {
 
 .badge-pill {
     display: inline-flex; align-items: center; gap: 8px;
-    background: rgba(16, 185, 129, 0.15); color: #34d399;
+    background: rgba(16, 185, 129, 0.25); color: #34d399;
     padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 700;
-    margin-bottom: 1.5rem; border: 1px solid rgba(16, 185, 129, 0.4);
-    box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+    margin-bottom: 1.5rem; border: 1px solid rgba(16, 185, 129, 0.55);
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
 }
 .dot { width: 8px; height: 8px; background: #34d399; border-radius: 50%; box-shadow: 0 0 10px #34d399; }
 
@@ -192,7 +192,7 @@ body::before {
 
 .bento-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
 .bento-date { font-size: 0.8rem; color: var(--text-secondary); font-weight: 600; }
-.bento-badge { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; padding: 4px 8px; border-radius: 4px; }
+.bento-badge { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; padding: 4px 8px; border-radius: 4px; }
 .bento-badge.school { background: rgba(139, 92, 246, 0.2); color: var(--accent-purple); }
 .bento-badge.pro { background: rgba(59, 130, 246, 0.2); color: var(--accent-blue); }
 
@@ -310,7 +310,7 @@ body::before {
 }
 
 .result-badge {
-    font-size: 0.72rem; font-weight: 700; padding: 3px 10px;
+    font-size: 0.78rem; font-weight: 700; padding: 3px 10px;
     border-radius: 50px; display: inline-block;
 }
 .result-badge.green {
