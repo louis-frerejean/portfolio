@@ -1,7 +1,7 @@
 :root {
     --bg-dark: #020617;
     --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
+    --text-secondary: #a8b8cc;
     --accent-blue: #3b82f6;
     --accent-purple: #8b5cf6;
     --accent-green: #10b981;
@@ -65,7 +65,6 @@ body::before {
     gap: 40px; /* Plus d'espace entre les éléments */
     align-items: center;
     box-shadow: 0 10px 40px rgba(0,0,0,0.4); /* Ombre plus profonde */
-    min-width: 400px; /* Largeur minimale pour ne pas être rikiki */
     justify-content: space-between;
 }
 
@@ -104,8 +103,9 @@ body::before {
 /* --- HERO SECTION --- */
 .hero-wrapper {
     min-height: 85vh; display: flex; align-items: center; justify-content: center;
-    padding: 130px 2rem 2rem; /* Augmenté pour ne pas être caché par la nav */
+    padding: 130px 2rem 2rem;
     max-width: var(--hero-width); margin: 0 auto;
+    position: relative;
 }
 
 .hero-container {
@@ -218,7 +218,7 @@ body::before {
 }
 
 .project-tile {
-    background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 16px;
+    background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px;
     padding: 2rem; transition: all 0.3s ease; display: flex; flex-direction: column;
 }
 .project-tile:hover { transform: translateY(-5px); border-color: var(--accent-blue); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
@@ -236,7 +236,7 @@ body::before {
 .project-tile p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1; }
 
 .tile-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
-.tile-tags span { font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.03); padding: 4px 10px; border-radius: 6px; }
+.tile-tags span { font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.03); padding: 4px 10px; border-radius: 8px; border: 1px solid transparent; }
 
 /* --- PITCH PERSONNEL --- */
 .pitch-section { padding-top: 0; padding-bottom: 1rem; }
@@ -246,7 +246,7 @@ body::before {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-left: 3px solid var(--accent-blue);
-    border-radius: 14px; padding: 2rem 2.5rem;
+    border-radius: 12px; padding: 2rem 2.5rem;
     position: relative;
 }
 
@@ -271,7 +271,7 @@ body::before {
 
 .skill-card {
     background: var(--glass-bg); border: 1px solid var(--glass-border);
-    border-radius: 14px; padding: 1.5rem;
+    border-radius: 12px; padding: 1.5rem;
     transition: transform 0.3s, border-color 0.3s;
 }
 .skill-card:hover { transform: translateY(-3px); border-color: rgba(255,255,255,0.2); }
@@ -335,7 +335,7 @@ body::before {
 .testimonial-card {
     max-width: 860px; margin: 0 auto;
     background: var(--glass-bg); border: 1px solid var(--glass-border);
-    border-radius: 16px; padding: 2.5rem;
+    border-radius: 12px; padding: 2.5rem;
 }
 
 .testimonial-quote { margin-bottom: 1.5rem; }
@@ -382,7 +382,7 @@ body::before {
 
 .lf-card {
     background: var(--glass-bg); border: 1px solid var(--glass-border);
-    border-radius: 14px; padding: 1.8rem;
+    border-radius: 12px; padding: 1.5rem;
     transition: transform 0.3s, border-color 0.3s;
     display: flex; flex-direction: column; gap: 0.8rem;
 }
