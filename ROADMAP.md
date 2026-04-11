@@ -1,24 +1,29 @@
 # Feuille de Route — Portfolio Louis Frerejean
-> Audit réalisé le 11 avril 2026. Classement par priorité décroissante.
+> Audit réalisé le 12 avril 2026. Mis à jour après retours P1.
 
 ---
 
-## PRIORITÉ 1 — Corrections bloquantes
-
-Ces points nuisent directement à la crédibilité ou au fonctionnement du site.
+## PRIORITÉ 1 — Corrections bloquantes ✅ TERMINÉ
 
 ### Contenu (Fond)
-
-- [ ] **Mettre à jour la disponibilité** : "Dispo Vendredi • Janvier 2026" est périmé. Indiquer la disponibilité actuelle ou supprimer la date précise.
-- [ ] **Mettre à jour le texte footer** : "disponible tous les vendredis à partir de Janvier 2026" → à reformuler en fonction de la situation réelle.
-- [ ] **Corriger le copyright** : "© 2025" → "© 2026".
-- [ ] **Ajouter un lien LinkedIn** dans la section Contact. C'est le premier réflexe d'un recruteur après avoir vu le portfolio.
-- [ ] **Ajouter un bouton "Télécharger mon CV"** (PDF) dans la section Hero ou Contact. Indispensable pour un portfolio à vocation professionnelle.
+- [x] Mettre à jour le badge hero → "Recherche Alternance • Cybersécurité 2026-2027"
+- [x] Reformuler le sous-titre hero (sans acronymes, plus lisible)
+- [x] Ajouter Guardia Cybersecurity School dans la timeline
+- [x] Corriger dates LDLC (2024-2026, statut "En cours", nom complet, vrais 3 piliers)
+- [x] Corriger Olympiades → "Top 150 Académie de Lyon (Ain, Loire et Rhône)"
+- [x] Corriger badge Croix-Rousse Précision → "CDD + Stage"
+- [x] Renommer "Modules Radio Arduino" → "Prototypage IoT" (description enrichie)
+- [x] Renommer "Agent IA Personnalisé" → "IA Générative en pratique" (recentré veille + agents)
+- [x] Renommer "Inclusion Automobile" → "Gestion de Projet RSE" (contexte explicité)
+- [x] Mettre à jour le footer alternance → priorité Lyon, ouvert à toute opportunité
+- [x] Corriger le copyright © 2025 → © 2026
+- [x] Ajouter LinkedIn dans la section Contact
+- [x] Ajouter bouton "Télécharger mon CV" dans le Hero
 
 ### Technique (Forme)
-
-- [ ] **Corriger le bug JS de l'effet lueur** : le script cible `.card` mais les éléments HTML utilisent `.bento-card` et `.project-tile`. L'effet ne se déclenche jamais. Corriger le sélecteur.
-- [ ] **Rendre le numéro de téléphone cliquable** : remplacer le `<div>` par `<a href="tel:0769477425">` pour que le tap fonctionne sur mobile.
+- [x] Corriger le bug JS de l'effet lueur (`.card` → `.bento-card, .project-tile`)
+- [x] Rendre le numéro de téléphone cliquable (`tel:`)
+- [x] Supprimer le `console.log` en production
 
 ---
 
@@ -28,17 +33,18 @@ Ces points impactent l'expérience utilisateur et la visibilité en ligne.
 
 ### Contenu (Fond)
 
-- [ ] **Corriger "Start" → "Accueil"** dans la navbar. Le site est 100% en français, ce mot rompt la cohérence.
-- [ ] **Enrichir les projets** : chaque tile est très courte. Ajouter une ligne de résultat concret ou de chiffre pour chaque projet (ex : "Keeshirt : classement N°X sur Y équipes").
-- [ ] **Préciser le projet "Développement Web"** : c'est ce portfolio lui-même — le dire explicitement rend ça plus honnête et plus fort.
-- [ ] **Ajouter une section "Compétences"** ou un bloc synthétique des outils maîtrisés (langages, logiciels, certifications) — aujourd'hui cette info est éparpillée dans les cards.
-- [ ] **Mentionner la certification Lean Green Belt** plus visiblement — c'est un vrai atout qui se noie dans une liste à puces.
+- [ ] **Corriger "Start" → "Accueil"** dans la navbar. Le site est 100% en français.
+- [ ] **Enrichir les projets avec des résultats concrets** : ajouter une ligne de résultat ou chiffre pour chaque tile (ex : classement Keeshirt, retours sur le week-end au Mans, etc.).
+- [ ] **Préciser le projet "Développement Web"** : mentionner explicitement que c'est ce portfolio.
+- [ ] **Ajouter une section "Compétences"** : bloc synthétique des langages (Python, Arduino, HTML/CSS/JS), outils (VS Code, Suite Adobe, Canva, WordPress) et certifications (Lean Green Belt). Aujourd'hui cette info est noyée dans les cards.
+- [ ] **Mettre en avant la certification Lean Green Belt** plus visiblement — se noie dans les tags du stage Diwii.
+- [ ] **Mettre à jour le titre de l'onglet** : "Louis Frerejean | Tech & Business" → "Louis Frerejean | Cybersécurité & Tech".
 
 ### SEO & Partage (Forme)
 
-- [ ] **Ajouter une `<meta name="description">`** dans le `<head>`. Exemple : "Portfolio de Louis Frerejean — Étudiant Bachelor Numérique & Entrepreneuriat, passionné par la Tech et le Business."
-- [ ] **Ajouter les balises Open Graph** (og:title, og:description, og:image) pour que le lien soit joli sur LinkedIn, WhatsApp, etc.
-- [ ] **Ajouter un favicon** (icône dans l'onglet navigateur). Peut être un simple "LF" stylisé en SVG.
+- [ ] **Ajouter une `<meta name="description">`** : "Portfolio de Louis Frerejean — Futur alternant en Cybersécurité (Guardia), background IoT, IA générative et gestion de projet."
+- [ ] **Ajouter les balises Open Graph** (og:title, og:description, og:image) pour les aperçus LinkedIn, WhatsApp, etc.
+- [ ] **Ajouter un favicon** (icône "LF" dans l'onglet navigateur).
 
 ---
 
@@ -48,16 +54,17 @@ Ces points améliorent la fluidité et la qualité perçue.
 
 ### Contenu (Fond)
 
-- [ ] **Ajouter une vraie section "À propos"** ou un paragraphe de pitch plus personnel entre le Hero et la timeline. Le titre "chaînon manquant" est fort mais mériterait 2–3 phrases de développement.
-- [ ] **Réviser les hobbies dans le footer** : actuellement ils flottent sans contexte. Ajouter une courte phrase d'intro du type "En dehors du travail..." pour les ancrer.
-- [ ] **Revoir l'ordre des projets** : commencer par les plus impressionnants (Diwii, CNC) avant les plus génériques (Développement Web, Agent IA).
+- [ ] **Ajouter un pitch personnel** entre le Hero et la timeline : 2–3 phrases qui expliquent le fil rouge de ton parcours (pourquoi la cyber après l'industrie et l'IA ?). C'est ce que tout recruteur veut comprendre.
+- [ ] **Réviser les hobbies dans le footer** : ajouter une courte phrase d'intro pour les ancrer (ex : "En dehors du travail..."). Aujourd'hui ils flottent sans contexte.
+- [ ] **Revoir l'ordre des projets** : mettre en avant les plus impactants en premier (Diwii, Prototypage IoT, IA) avant les plus génériques (Keeshirt, Pop Up).
+- [ ] **Corriger le lien "Mon parcours"** dans le Hero (le bouton a été remplacé par "Télécharger mon CV" — ajouter un 3ème lien ou revoir la disposition CTA si besoin).
 
 ### Interface (Forme)
 
-- [ ] **Ajouter un état actif sur la navbar** : mettre en évidence le lien correspondant à la section visible (via IntersectionObserver + classe active CSS). Améliore fortement l'orientation.
-- [ ] **Corriger le débordement des floating cards** sur mobile (`left: -30px` / `right: -30px` sortent du viewport sur petits écrans). Les contraindre avec `clamp()` ou les masquer sous 480px.
-- [ ] **Ajouter un indicateur de scroll** (flèche animée) en bas du Hero pour inciter à descendre — le contenu commence haut et n'est pas immédiatement visible.
-- [ ] **Ajouter une transition de couleur sur les tags** au survol pour renforcer l'interactivité.
+- [ ] **Ajouter un état actif sur la navbar** : lien mis en évidence selon la section visible (IntersectionObserver + classe CSS active).
+- [ ] **Corriger le débordement des floating cards sur mobile** : `left: -30px` / `right: -30px` sortent du viewport sur petits écrans — contraindre avec `clamp()` ou masquer sous 480px.
+- [ ] **Ajouter une flèche de scroll animée** en bas du Hero pour inciter à descendre.
+- [ ] **Ajouter une transition sur les tags** au survol pour renforcer l'interactivité.
 
 ---
 
@@ -65,12 +72,11 @@ Ces points améliorent la fluidité et la qualité perçue.
 
 Ces points n'impactent pas l'utilisateur final mais améliorent la qualité du code.
 
-- [ ] **Supprimer le `console.log`** en production (`script.js`, ligne 37).
-- [ ] **Ajouter `defer`** au chargement du script Phosphor Icons (`<script defer src="...">`) pour ne pas bloquer le rendu initial.
-- [ ] **Déplacer les styles inline** du HTML vers le CSS (`style="margin-bottom: 10px;"`, `style="margin-top: 15px;"`).
-- [ ] **Ajouter `aria-hidden="true"`** sur les icônes purement décoratives pour les lecteurs d'écran.
+- [ ] **Ajouter `defer`** au chargement du script Phosphor Icons pour ne pas bloquer le rendu initial.
+- [ ] **Déplacer les styles inline** restants dans le HTML vers le CSS (`style="margin-bottom: 10px;"`, `style="margin-top: 15px;"` dans la card Diwii).
+- [ ] **Ajouter `aria-hidden="true"`** sur les icônes purement décoratives.
 - [ ] **Ajouter un lien "Passer au contenu"** (`skip-to-main`) pour l'accessibilité clavier.
-- [ ] **Ajouter un hash d'intégrité** (`integrity` + `crossorigin`) sur le script CDN Phosphor pour la sécurité.
+- [ ] **Ajouter un hash d'intégrité** (`integrity` + `crossorigin`) sur le script CDN Phosphor.
 
 ---
 
@@ -80,25 +86,25 @@ Ces points n'impactent pas l'utilisateur final mais améliorent la qualité du c
 
 ### Contenu (Fond)
 
-- [ ] **Ajouter des témoignages** (tuteur de stage, professeur, partenaire) pour renforcer la crédibilité.
-- [ ] **Ajouter une section "Ce que je cherche"** : type de mission, secteur visé, rythme souhaité. Aide le recruteur à se projeter.
-- [ ] **Internationaliser** : proposer une version anglaise du site si des opportunités internationales sont visées.
+- [ ] **Ajouter des témoignages** : tuteur Diwii, référent LDLC, partenaire du projet Mans — très fort pour un profil qui cherche une alternance.
+- [ ] **Ajouter une section "Ce que je cherche"** : type de mission cyber (pentest, SOC, GRC ?), secteur, rythme d'alternance souhaité. Aide le recruteur à se projeter.
+- [ ] **Internationaliser** : version anglaise si des opportunités hors France sont envisagées.
 
 ### Technique (Forme)
 
-- [ ] **Ajouter des données structurées JSON-LD** (schema.org/Person) pour améliorer le référencement sémantique.
-- [ ] **Optimiser `photo.jpg`** : convertir en WebP et ajouter un `loading="lazy"` approprié. Vérifier que la taille du fichier est raisonnable (< 200 Ko idéalement).
-- [ ] **Passer à un générateur de site statique** (Astro, Eleventy) si le site grossit, pour mieux gérer la structure et le SEO.
-- [ ] **Mettre en place un domaine personnalisé** (`louisfrerejean.com` ou similaire) et un hébergement stable (Vercel, Netlify, GitHub Pages).
+- [ ] **Ajouter des données structurées JSON-LD** (schema.org/Person) pour le référencement sémantique.
+- [ ] **Optimiser `photo.jpg`** : convertir en WebP, vérifier le poids (< 200 Ko idéalement).
+- [ ] **Mettre en place un domaine personnalisé** (`louisfrerejean.com` ou similaire).
+- [ ] **Passer à un générateur de site statique** (Astro, Eleventy) si le site grossit.
 
 ---
 
 ## Récapitulatif
 
-| Priorité | Nb de tâches | Effort estimé |
+| Priorité | Statut | Nb de tâches |
 |---|---|---|
-| P1 — Bloquant | 7 | ~1h |
-| P2 — Important | 10 | ~2–3h |
-| P3 — UX | 8 | ~2h |
-| P4 — Nettoyage | 6 | ~30min |
-| P5 — Futur | 8 | À planifier |
+| P1 — Bloquant | ✅ Terminé | 16 |
+| P2 — Important | 🔄 À faire | 9 |
+| P3 — UX | 🔄 À faire | 8 |
+| P4 — Nettoyage | 🔄 À faire | 5 |
+| P5 — Futur | ⏳ À planifier | 7 |
