@@ -231,12 +231,25 @@ body::before {
 .tile-icon.blue { background: rgba(59, 130, 246, 0.2); color: var(--accent-blue); }
 .tile-icon.purple { background: rgba(139, 92, 246, 0.2); color: var(--accent-purple); }
 .tile-icon.green { background: rgba(16, 185, 129, 0.2); color: var(--accent-green); }
+.tile-icon.orange { background: rgba(255, 99, 74, 0.2); color: #FF634A; }
 
 .project-tile h3 { margin: 0 0 10px 0; font-size: 1.2rem; color: white; }
 .project-tile p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1; }
 
 .tile-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
 .tile-tags span { font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.03); padding: 4px 10px; border-radius: 8px; border: 1px solid transparent; }
+
+.tile-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 1rem; font-size: 0.82rem; font-weight: 600;
+    color: #FF634A; text-decoration: none;
+    border: 1px solid rgba(255, 99, 74, 0.3);
+    padding: 6px 14px; border-radius: 8px;
+    background: rgba(255, 99, 74, 0.08);
+    transition: background 0.2s, border-color 0.2s;
+    width: fit-content;
+}
+.tile-link:hover { background: rgba(255, 99, 74, 0.18); border-color: rgba(255, 99, 74, 0.6); }
 
 /* --- PITCH PERSONNEL --- */
 .pitch-section { padding-top: 0; padding-bottom: 1rem; }
@@ -322,6 +335,11 @@ body::before {
     background: rgba(59, 130, 246, 0.15);
     color: #60a5fa;
     border: 1px solid rgba(59, 130, 246, 0.3);
+}
+.result-badge.orange {
+    background: rgba(255, 99, 74, 0.15);
+    color: #FF634A;
+    border: 1px solid rgba(255, 99, 74, 0.3);
 }
 
 .tile-quote {
