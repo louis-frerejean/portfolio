@@ -242,14 +242,14 @@ body::before {
 .tile-link {
     display: inline-flex; align-items: center; gap: 6px;
     margin-top: 1rem; font-size: 0.82rem; font-weight: 600;
-    color: #FF634A; text-decoration: none;
-    border: 1px solid rgba(255, 99, 74, 0.3);
-    padding: 6px 14px; border-radius: 8px;
-    background: rgba(255, 99, 74, 0.08);
-    transition: background 0.2s, border-color 0.2s;
+    text-decoration: none; padding: 6px 14px; border-radius: 8px;
+    border: 1px solid; transition: background 0.2s, border-color 0.2s;
     width: fit-content;
 }
-.tile-link:hover { background: rgba(255, 99, 74, 0.18); border-color: rgba(255, 99, 74, 0.6); }
+.tile-link.tile-link-orange { color: #FF634A; border-color: rgba(255, 99, 74, 0.3); background: rgba(255, 99, 74, 0.08); }
+.tile-link.tile-link-orange:hover { background: rgba(255, 99, 74, 0.18); border-color: rgba(255, 99, 74, 0.6); }
+.tile-link.tile-link-blue { color: var(--accent-blue); border-color: rgba(59, 130, 246, 0.3); background: rgba(59, 130, 246, 0.08); }
+.tile-link.tile-link-blue:hover { background: rgba(59, 130, 246, 0.18); border-color: rgba(59, 130, 246, 0.6); }
 
 /* --- PITCH PERSONNEL --- */
 .pitch-section { padding-top: 0; padding-bottom: 1rem; }
