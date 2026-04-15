@@ -35,7 +35,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 4. NAVBAR ACTIVE AU SCROLL
+    // 4. MENU HAMBURGER MOBILE
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    menuToggle.addEventListener('click', () => {
+        const isOpen = navbar.classList.toggle('open');
+        menuToggle.classList.toggle('open', isOpen);
+        menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('open');
+            menuToggle.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!navbar.contains(e.target)) {
+            navbar.classList.remove('open');
+            menuToggle.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    // 5. NAVBAR ACTIVE AU SCROLL
     const sections = document.querySelectorAll('section[id], footer[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
 

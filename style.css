@@ -506,6 +506,64 @@ body::before {
 .btn-outline { border: 1px solid rgba(255,255,255,0.2); color: white; background: rgba(255,255,255,0.02); }
 .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: white; transform: translateY(-3px); }
 
+/* --- HAMBURGER BUTTON --- */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    flex-shrink: 0;
+}
+.menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s, width 0.3s;
+}
+.menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-toggle.open span:nth-child(2) { opacity: 0; width: 0; }
+.menu-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* --- NAVBAR MOBILE --- */
+@media (max-width: 860px) {
+    .navbar {
+        top: 16px;
+        padding: 12px 20px;
+        width: calc(100% - 2.5rem);
+        max-width: 480px;
+        gap: 0;
+        flex-wrap: wrap;
+        border-radius: 100px;
+        transition: border-radius 0.3s;
+    }
+    .navbar.open { border-radius: 20px; }
+
+    .menu-toggle { display: flex; }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding-top: 0.8rem;
+        margin-top: 0.8rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .navbar.open .nav-links { display: flex; }
+
+    .nav-links a {
+        padding: 10px 4px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        font-size: 0.95rem;
+    }
+    .nav-links a:last-child { border-bottom: none; }
+}
+
 /* MEDIA QUERIES DESKTOP */
 @media (min-width: 900px) {
     .hero-container { flex-direction: row; text-align: left; gap: 2rem; }
