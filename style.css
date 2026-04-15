@@ -534,7 +534,7 @@ body::before {
     .navbar {
         top: 16px;
         padding: 12px 20px;
-        width: calc(100% - 2.5rem);
+        width: calc(100% - 5rem);
         max-width: 480px;
         gap: 0;
         flex-wrap: wrap;
