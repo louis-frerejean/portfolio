@@ -11,7 +11,7 @@
     --body-width: 1300px;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 /* ACCESSIBILITÉ — skip to main */
 .skip-to-main {
@@ -167,7 +167,7 @@ body::before {
 
 /* SECTIONS GENERAL */
 .section-container { padding: 5rem 2rem; max-width: var(--body-width); margin: 0 auto; }
-.section-title { font-size: 2rem; margin-bottom: 3rem; display: flex; align-items: center; gap: 15px; text-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+.section-title { font-size: 2rem; margin-bottom: 3rem; display: flex; align-items: center; gap: 15px; text-shadow: 0 5px 15px rgba(0,0,0,0.3); flex-wrap: wrap; }
 .dim { font-size: 0.5em; color: var(--text-secondary); font-weight: 500; letter-spacing: 2px; text-transform: uppercase; margin-top: 8px;}
 
 /* --- BENTO GRID LAYOUT --- */
@@ -213,7 +213,7 @@ body::before {
 /* --- PROJETS TILES --- */
 .project-grid-modern {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 2rem;
 }
 
@@ -562,6 +562,14 @@ body::before {
         font-size: 0.95rem;
     }
     .nav-links a:last-child { border-bottom: none; }
+
+    .badge-pill { white-space: normal; text-align: center; justify-content: center; }
+
+    .bento-header { flex-wrap: wrap; gap: 6px; }
+
+    .method-item .val { word-break: break-all; }
+
+    .title-hero { font-size: 2.8rem; }
 }
 
 /* MEDIA QUERIES DESKTOP */
