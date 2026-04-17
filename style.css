@@ -491,6 +491,9 @@ body::before {
 }
 .mini-hobby:hover { background: rgba(255,255,255,0.08); color: white; }
 .mini-hobby i { font-size: 1.2rem; color: var(--accent-blue); }
+.mini-hobby .hobby-icon { font-size: 1.2rem; color: var(--accent-blue); line-height: 1; }
+.mini-hobby .hobby-text { display: flex; flex-direction: column; gap: 2px; }
+.mini-hobby .hobby-detail { font-size: 0.75rem; color: var(--text-muted, rgba(255,255,255,0.35)); }
 
 .full-btn { text-align: center; width: 100%; box-sizing: border-box; padding: 15px; font-size: 1.1rem; }
 
