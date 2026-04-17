@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.borderColor = "rgba(255,255,255,0.15)";
         });
         card.addEventListener('mouseleave', () => {
-            card.style.background = 'rgba(30, 41, 59, 0.6)';
-            card.style.borderColor = "rgba(255, 255, 255, 0.1)";
+            card.style.background = '';
+            card.style.borderColor = '';
         });
     });
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (active) active.classList.add('active');
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.1 });
 
     sections.forEach(section => navObserver.observe(section));
 

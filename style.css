@@ -23,6 +23,12 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 }
 .skip-to-main:focus { top: 1rem; }
 
+:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
 body { 
     margin: 0; font-family: 'Inter', sans-serif; 
     background-color: var(--bg-dark); color: var(--text-primary); 
@@ -89,15 +95,6 @@ body::before {
     color: white; 
     text-shadow: 0 0 15px rgba(255,255,255,0.6);
 }
-
-/* Petit bouton mail dans la nav */
-.nav-btn-action {
-    display: flex; align-items: center; justify-content: center;
-    width: 36px; height: 36px; border-radius: 50%;
-    background: rgba(255,255,255,0.1); color: white;
-    transition: 0.3s;
-}
-.nav-btn-action:hover { background: var(--accent-blue); transform: scale(1.1); }
 
 
 /* --- HERO SECTION --- */
@@ -230,8 +227,6 @@ body::before {
 }
 .tile-icon.blue { background: rgba(59, 130, 246, 0.2); color: var(--accent-blue); }
 .tile-icon.purple { background: rgba(139, 92, 246, 0.2); color: var(--accent-purple); }
-.tile-icon.green { background: rgba(16, 185, 129, 0.2); color: var(--accent-green); }
-.tile-icon.orange { background: rgba(255, 99, 74, 0.2); color: #FF634A; }
 
 .project-tile h3 { margin: 0 0 10px 0; font-size: 1.2rem; color: white; }
 .project-tile p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1; }
@@ -246,8 +241,6 @@ body::before {
     border: 1px solid; transition: background 0.2s, border-color 0.2s;
     width: fit-content;
 }
-.tile-link.tile-link-orange { color: #FF634A; border-color: rgba(255, 99, 74, 0.3); background: rgba(255, 99, 74, 0.08); }
-.tile-link.tile-link-orange:hover { background: rgba(255, 99, 74, 0.18); border-color: rgba(255, 99, 74, 0.6); }
 .tile-link.tile-link-blue { color: var(--accent-blue); border-color: rgba(59, 130, 246, 0.3); background: rgba(59, 130, 246, 0.08); }
 .tile-link.tile-link-blue:hover { background: rgba(59, 130, 246, 0.18); border-color: rgba(59, 130, 246, 0.6); }
 
@@ -344,31 +337,6 @@ body::before {
 }
 .skill-pills span:hover { background: rgba(59,130,246,0.15); border-color: var(--accent-blue); color: white; }
 
-/* --- BADGES RÉSULTATS PROJETS --- */
-.tile-results {
-    display: flex; flex-wrap: wrap; gap: 6px;
-    margin-bottom: 0.8rem;
-}
-
-.result-badge {
-    font-size: 0.78rem; font-weight: 700; padding: 3px 10px;
-    border-radius: 50px; display: inline-block;
-}
-.result-badge.green {
-    background: rgba(16, 185, 129, 0.15);
-    color: #34d399;
-    border: 1px solid rgba(16, 185, 129, 0.3);
-}
-.result-badge.blue {
-    background: rgba(59, 130, 246, 0.15);
-    color: #60a5fa;
-    border: 1px solid rgba(59, 130, 246, 0.3);
-}
-.result-badge.orange {
-    background: rgba(255, 99, 74, 0.15);
-    color: #FF634A;
-    border: 1px solid rgba(255, 99, 74, 0.3);
-}
 
 .tile-date {
     font-size: 0.78rem; color: var(--text-secondary); font-weight: 600;
