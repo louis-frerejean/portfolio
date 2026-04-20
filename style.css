@@ -458,7 +458,8 @@ body::before {
 .method-item .label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; }
 .method-item .val { color: white; font-weight: 500; }
 
-.footer-right { display: flex; flex-direction: column; gap: 2rem; align-items: center; }
+.footer-right { display: flex; flex-direction: column; gap: 1rem; align-items: center; }
+.footer-section-title { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); font-weight: 600; margin-bottom: 0.5rem; align-self: flex-start; }
 .hobby-grid-mini { display: grid; grid-template-columns: 1fr; gap: 1rem; width: 100%; }
 .mini-hobby {
     background: var(--glass-faint); border: 1px solid var(--glass-border);
